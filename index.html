@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متحف أرض اللبان - البليد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="language-toggle">
+        <a href="#" onclick="changeLanguage('ar')" class="active">العربية</a>
+        <a href="#" onclick="changeLanguage('en')">English</a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🏛️ متحف أرض اللبان</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">عن المتحف</a></li>
+                <li><a href="#exhibits">المعروضات</a></li>
+                <li><a href="#visiting">الزيارة</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>متحف أرض اللبان</h1>
+            <p>اكتشف تاريخ التجارة القديمة والحضارة العمانية</p>
+            <button class="cta-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                اكتشف المزيد
+            </button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>عن متحف أرض اللبان</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        متحف أرض اللبان يقع في منطقة البليد التاريخية بسلطنة عمان، ويعتبر من أهم المتاحف العمانية.
+                        يوثق المتحف تاريخ تجارة اللبان والبخور التي كانت تربط عمان بالحضارات القديمة.
+                    </p>
+                    <p>
+                        يحتوي المتحف على معروضات نادرة تعود لآلاف السنين، وتروي قصة حضارة مزدهرة على طريق التجارة القديمة.
+                    </p>
+                    <h3>المميزات:</h3>
+                    <ul class="features">
+                        <li>✨ معروضات تاريخية نادرة</li>
+                        <li>🛤️ طريق البخور التاريخي</li>
+                        <li>🏺 آثار من العصور القديمة</li>
+                        <li>📚 مكتبة تثقيفية متخصصة</li>
+                        <li>🎬 أفلام وثائقية</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <p>🏛️ صورة المتحف</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibits Section -->
+    <section id="exhibits" class="exhibits">
+        <div class="container">
+            <h2>المعروضات الرئيسية</h2>
+            <div class="exhibits-grid">
+                <div class="exhibit-card">
+                    <div class="exhibit-icon">🏺</div>
+                    <h3>الفخار القديم</h3>
+                    <p>أواني فخارية نادرة من العصور القديمة، تعكس مهارة الحرفيين العمانيين.</p>
+                </div>
+
+                <div class="exhibit-card">
+                    <div class="exhibit-icon">💰</div>
+                    <h3>النقود القديمة</h3>
+                    <p>عملات نادرة تعود لفترات زمنية مختلفة، دليل على ازدهار التجارة القديمة.</p>
+                </div>
+
+                <div class="exhibit-card">
+                    <div class="exhibit-icon">📿</div>
+                    <h3>الحلي والمجوهرات</h3>
+                    <p>مجموعة نادرة من الحلي والمجوهرات التاريخية بأشكال وأنماط مختلفة.</p>
+                </div>
+
+                <div class="exhibit-card">
+                    <div class="exhibit-icon">🌳</div>
+                    <h3>أشجار اللبان</h3>
+                    <p>معروضات تعليمية عن شجر اللبان الشهير وأهميتها التاريخية والاقتصادية.</p>
+                </div>
+
+                <div class="exhibit-card">
+                    <div class="exhibit-icon">📜</div>
+                    <h3>الوثائق التاريخية</h3>
+                    <p>وثائق نادرة وكتابات تاريخية توثق حقبة ازدهار التجارة.</p>
+                </div>
+
+                <div class="exhibit-card">
+                    <div class="exhibit-icon">🗺️</div>
+                    <h3>الخرائط القديمة</h3>
+                    <p>خرائط توضح طرق التجارة القديمة وأهمية موقع عمان الجغرافي.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visiting Info -->
+    <section id="visiting" class="visiting">
+        <div class="container">
+            <h2>معلومات الزيارة</h2>
+            <div class="visiting-grid">
+                <div class="visit-card">
+                    <h3>📍 الموقع</h3>
+                    <p>منطقة البليد التاريخية<br>ولاية ظفار، سلطنة عمان</p>
+                </div>
+
+                <div class="visit-card">
+                    <h3>🕐 ساعات العمل</h3>
+                    <p>من الأحد إلى الخميس<br>8:00 صباحاً - 4:00 مساءً<br>الجمعة والسبت مغلق</p>
+                </div>
+
+                <div class="visit-card">
+                    <h3>🎟️ تذاكر الدخول</h3>
+                    <p>البالغون: 3 ريال<br>الأطفال: 1 ريال<br>رسوم الكاميرا: 2 ريال</p>
+                </div>
+
+                <div class="visit-card">
+                    <h3>👥 الخدمات</h3>
+                    <p>✓ جولات إرشادية<br>✓ مقهى<br>✓ مكتبة<br>✓ محل هدايا</p>
+                </div>
+
+                <div class="visit-card">
+                    <h3>♿ التسهيلات</h3>
+                    <p>✓ كراسي متحركة<br>✓ مواقف سيارات<br>✓ دورات مياه<br>✓ مساحات مظللة</p>
+                </div>
+
+                <div class="visit-card">
+                    <h3>🚌 المواصلات</h3>
+                    <p>يمكن الوصول بسهولة<br>من مدينة صلالة<br>على بعد 50 كم تقريباً</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="gallery">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📷 الواجهة الرئيسية</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📷 القاعة الرئيسية</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📷 المعروضات</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📷 الفناء الخارجي</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>📞 معلومات التواصل</h3>
+                    <p><strong>الهاتف:</strong> +968 2341234</p>
+                    <p><strong>البريد الإلكتروني:</strong> info@frankincensemuseum.om</p>
+                    <p><strong>الفاكس:</strong> +968 2341235</p>
+                    <p><strong>الموقع:</strong> البليد، ظفار، عمان</p>
+                    
+                    <h3 style="margin-top: 30px;">🌐 تابعنا على</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-btn">Facebook</a>
+                        <a href="#" class="social-btn">Instagram</a>
+                        <a href="#" class="social-btn">Twitter</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <h3>أرسل لنا رسالة</h3>
+                    
+                    <input type="text" placeholder="اسمك" required>
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <input type="text" placeholder="الموضوع" required>
+                    <textarea placeholder="رسالتك" rows="5" required></textarea>
+                    
+                    <button type="submit" class="submit-btn">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 متحف أرض اللبان - جميع الحقوق محفوظة</p>
+            <p>سلطنة عمان 🇴🇲</p>
+            <p style="font-size: 12px; margin-top: 10px;">تم تطوير هذا الموقع بواسطة طلاب عمانيين</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
