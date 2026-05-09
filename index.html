@@ -8,22 +8,27 @@
 </head>
 <body>
     <div class="language-toggle">
-        <a href="#" onclick="changeLanguage('ar')" class="active">العربية</a>
-        <a href="#" onclick="changeLanguage('en')">English</a>
+        <a href="#" onclick="changeLanguage('ar')" class="lang-btn active" data-lang="ar">العربية</a>
+        <a href="#" onclick="changeLanguage('en')" class="lang-btn" data-lang="en">English</a>
+        <a href="#" onclick="changeLanguage('de')" class="lang-btn" data-lang="de">Deutsch</a>
+        <a href="#" onclick="changeLanguage('fr')" class="lang-btn" data-lang="fr">Français</a>
     </div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>🏛️ متحف أرض اللبان</h1>
+                <h1 data-ar="🏛️ متحف أرض اللبان" data-en="🏛️ Al Baleed Museum" data-de="🏛️ Al Baleed Museum" data-fr="🏛️ Musée Al Baleed">🏛️ متحف أرض اللبان</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">عن المتحف</a></li>
-                <li><a href="#exhibits">المعروضات</a></li>
-                <li><a href="#visiting">الزيارة</a></li>
-                <li><a href="#contact">التواصل</a></li>
+                <li><a href="#home" data-ar="الرئيسية" data-en="Home" data-de="Startseite" data-fr="Accueil">الرئيسية</a></li>
+                <li><a href="#about" data-ar="عن المتحف" data-en="About" data-de="Über" data-fr="À propos">عن المتحف</a></li>
+                <li><a href="#video" data-ar="الفيديو" data-en="Video" data-de="Video" data-fr="Vidéo">الفيديو</a></li>
+                <li><a href="#gallery" data-ar="الصور" data-en="Gallery" data-de="Galerie" data-fr="Galerie">الصور</a></li>
+                <li><a href="#exhibits" data-ar="المعروضات" data-en="Exhibits" data-de="Ausstellungen" data-fr="Expositions">المعروضات</a></li>
+                <li><a href="#map" data-ar="الموقع" data-en="Map" data-de="Karte" data-fr="Carte">الموقع</a></li>
+                <li><a href="#visiting" data-ar="الزيارة" data-en="Visit" data-de="Besuch" data-fr="Visite">الزيارة</a></li>
+                <li><a href="#contact" data-ar="التواصل" data-en="Contact" data-de="Kontakt" data-fr="Contact">التواصل</a></li>
             </ul>
         </div>
     </nav>
@@ -31,11 +36,9 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>متحف أرض اللبان</h1>
-            <p>اكتشف تاريخ التجارة القديمة والحضارة العمانية</p>
-            <button class="cta-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
-                اكتشف المزيد
-            </button>
+            <h1 data-ar="متحف أرض اللبان" data-en="Al Baleed Museum" data-de="Al Baleed Museum" data-fr="Musée Al Baleed">متحف أرض اللبان</h1>
+            <p data-ar="اكتشف تاريخ التجارة القديمة والحضارة العمانية" data-en="Discover the history of ancient trade and Omani civilization" data-de="Entdecken Sie die Geschichte des antiken Handels und der omanischen Zivilisation" data-fr="Découvrez l'histoire du commerce antique et de la civilisation omanienne">اكتشف تاريخ التجارة القديمة والحضارة العمانية</p>
+            <button class="cta-btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})" data-ar="اكتشف المزيد" data-en="Learn More" data-de="Mehr erfahren" data-fr="En savoir plus">اكتشف المزيد</button>
         </div>
         <div class="hero-overlay"></div>
     </section>
@@ -43,73 +46,189 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>عن متحف أرض اللبان</h2>
+            <h2 data-ar="عن متحف أرض اللبان" data-en="About Al Baleed Museum" data-de="Über das Al Baleed Museum" data-fr="À propos du Musée Al Baleed">عن متحف أرض اللبان</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        متحف أرض اللبان يقع في منطقة البليد التاريخية بسلطنة عمان، ويعتبر من أهم المتاحف العمانية.
-                        يوثق المتحف تاريخ تجارة اللبان والبخور التي كانت تربط عمان بالحضارات القديمة.
-                    </p>
-                    <p>
-                        يحتوي المتحف على معروضات نادرة تعود لآلاف السنين، وتروي قصة حضارة مزدهرة على طريق التجارة القديمة.
-                    </p>
-                    <h3>المميزات:</h3>
+                    <p data-ar="متحف أرض اللبان يقع في منطقة البليد التاريخية بسلطنة عمان، ويعتبر من أهم المتاحف العمانية. يوثق المتحف تاريخ تجارة اللبان والبخور التي كانت تربط عمان بالحضارات القديمة." data-en="Al Baleed Museum is located in the historic Al Baleed area in Oman, considered one of the most important Omani museums. The museum documents the history of frankincense and incense trade that connected Oman with ancient civilizations." data-de="Das Al Baleed Museum befindet sich in der historischen Gegend von Al Baleed im Oman und ist eines der wichtigsten omanischen Museen. Das Museum dokumentiert die Geschichte des Weihrauch- und Räucherhandels, der Oman mit antiken Zivilisationen verband." data-fr="Le Musée Al Baleed est situé dans la région historique d'Al Baleed à Oman, considéré comme l'un des plus importants musées omaniens. Le musée documente l'histoire du commerce de l'encens et de l'encens qui reliait Oman aux civilisations antiques.">متحف أرض اللبان يقع في منطقة البليد التاريخية بسلطنة عمان، ويعتبر من أهم المتاحف العمانية. يوثق المتحف تاريخ تجارة اللبان والبخور التي كانت تربط عمان بالحضارات القديمة.</p>
+                    
+                    <p data-ar="يحتوي المتحف على معروضات نادرة تعود لآلاف السنين، وتروي قصة حضارة مزدهرة على طريق التجارة القديمة. البليد كانت مركزاً تجارياً مهماً منذ القرن الثالث قبل الميلاد." data-en="The museum contains rare artifacts dating back thousands of years, telling the story of a flourishing civilization on the ancient trade route. Al Baleed was an important commercial center since the 3rd century BCE." data-de="Das Museum beherbergt seltene Artefakte aus Tausenden von Jahren und erzählt die Geschichte einer florierenden Zivilisation auf der antiken Handelsroute. Al Baleed war seit dem 3. Jahrhundert v. Chr. ein wichtiges Handelszentrum." data-fr="Le musée contient des artefacts rares datant de milliers d'années, racontant l'histoire d'une civilisation florissante sur la route commerciale antique. Al Baleed était un centre commercial important depuis le 3ème siècle avant J.-C.">يحتوي المتحف على معروضات نادرة تعود لآلاف ال��نين، وتروي قصة حضارة مزدهرة على طريق التجارة القديمة. البليد كانت مركزاً تجارياً مهماً منذ القرن الثالث قبل الميلاد.</p>
+                    
+                    <h3 data-ar="النقاط المميزة:" data-en="Key Highlights:" data-de="Hauptmerkmale:" data-fr="Points clés:">النقاط المميزة:</h3>
                     <ul class="features">
-                        <li>✨ معروضات تاريخية نادرة</li>
-                        <li>🛤️ طريق البخور التاريخي</li>
-                        <li>🏺 آثار من العصور القديمة</li>
-                        <li>📚 مكتبة تثقيفية متخصصة</li>
-                        <li>🎬 أفلام وثائقية</li>
+                        <li data-ar="✨ معروضات تاريخية نادرة تعود لآلاف السنين" data-en="✨ Rare historical artifacts dating back thousands of years" data-de="✨ Seltene historische Artefakte aus Tausenden von Jahren" data-fr="✨ Artefacts historiques rares datant de milliers d'années">✨ معروضات تاريخية نادرة تعود لآلاف السنين</li>
+                        <li data-ar="🛤️ طريق البخور التاريخي وأهميته التجارية" data-en="🛤️ Historic Incense Route and its commercial importance" data-de="🛤️ Historische Weihrauchstraße und ihre kommerzielle Bedeutung" data-fr="🛤️ Route historique de l'encens et son importance commerciale">🛤️ طريق البخور التاريخي وأهميته التجارية</li>
+                        <li data-ar="🏺 آثار من العصور القديمة والعصور الإسلامية" data-en="🏺 Artifacts from ancient and Islamic periods" data-de="🏺 Artefakte aus antiken und islamischen Perioden" data-fr="🏺 Artefacts des périodes anciennes et islamiques">🏺 آثار من العصور القديمة والعصور الإسلامية</li>
+                        <li data-ar="📚 مكتبة تثقيفية متخصصة في التاريخ العماني" data-en="📚 Educational library specialized in Omani history" data-de="📚 Bildungsbibliothek spezialisiert auf omanische Geschichte" data-fr="📚 Bibliothèque pédagogique spécialisée dans l'histoire omanienne">📚 مكتبة تثقيفية متخصصة في التاريخ العماني</li>
+                        <li data-ar="🎬 أفلام وثائقية توضح الحياة القديمة" data-en="🎬 Documentary films illustrating ancient life" data-de="🎬 Dokumentarfilme, die das antike Leben veranschaulichen" data-fr="🎬 Films documentaires illustrant la vie antique">���� أفلام وثائقية توضح الحياة القديمة</li>
+                        <li data-ar="👨‍🏫 جولات إرشادية متخصصة وتثقيفية" data-en="👨‍🏫 Specialized and educational guided tours" data-de="👨‍🏫 Spezialisierte und pädagogische Führungen" data-fr="👨‍🏫 Visites guidées spécialisées et éducatives">👨‍🏫 جولات إرشادية متخصصة وتثقيفية</li>
                     </ul>
                 </div>
                 <div class="about-image">
-                    <div class="image-placeholder">
-                        <p>🏛️ صورة المتحف</p>
+                    <img src="https://images.unsplash.com/photo-1564399579883-451a5d44be7f?w=500&h=400&fit=crop" alt="متحف أرض اللبان" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2 data-ar="فيديو توضيحي عن المتحف" data-en="Documentary Video About the Museum" data-de="Dokumentarfilm über das Museum" data-fr="Vidéo documentaire sur le musée">فيديو توضيحي عن المتحف</h2>
+            <div class="video-container">
+                <iframe width="100%" height="600" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=1&modestbranding=1" 
+                    title="متحف أرض اللبان" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                <p class="video-note" data-ar="* يمكن استبدال الفيديو برابط فيديو توثيقي حقيقي عن المتحف" data-en="* This video can be replaced with actual documentary footage of the museum" data-de="* Dieses Video kann durch tatsächliche Dokumentaraufnahmen des Museums ersetzt werden" data-fr="* Cette vidéo peut être remplacée par des images documentaires réelles du musée">* يمكن استبدال الفيديو برابط فيديو توثيقي حقيقي عن المتحف</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 data-ar="معرض الصور" data-en="Photo Gallery" data-de="Fotogalerie" data-fr="Galerie de photos">معرض الصور</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578321272176-305d5e0bfdb6?w=400&h=300&fit=crop" alt="الواجهة الرئيسية">
+                    <h4 data-ar="الواجهة الرئيسية للمتحف" data-en="Main Museum Entrance" data-de="Haupteingang des Museums" data-fr="Entrée principale du musée">الواجهة الرئيسية للمتحف</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1565182999555-2c393b65dd5b?w=400&h=300&fit=crop" alt="القاعة الرئيسية">
+                    <h4 data-ar="القاعة الرئيسية" data-en="Main Hall" data-de="Haupthalle" data-fr="Hall principal">القاعة الرئيسية</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1561449927-2c7f09d0b0a8?w=400&h=300&fit=crop" alt="المعروضات">
+                    <h4 data-ar="المعروضات الأثرية" data-en="Archaeological Exhibits" data-de="Archäologische Ausstellungen" data-fr="Expositions archéologiques">المعروضات الأثرية</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571078615299-6cf423c4a1b9?w=400&h=300&fit=crop" alt="الفناء الخارجي">
+                    <h4 data-ar="الفناء الخارجي" data-en="Outdoor Courtyard" data-de="Außenhof" data-fr="Cour extérieure">الفناء الخارجي</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562883314-187f33d4f9e3?w=400&h=300&fit=crop" alt="معروضات تفصيلية">
+                    <h4 data-ar="معروضات تفصيلية" data-en="Detailed Artifacts" data-de="Detaillierte Artefakte" data-fr="Artefacts détaillés">معروضات تفصيلية</h4>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516979187457-635ffe35ff81?w=400&h=300&fit=crop" alt="الأوعية القديمة">
+                    <h4 data-ar="الأوعية والفخار القديم" data-en="Ancient Pottery and Vessels" data-de="Antike Keramik und Behälter" data-fr="Poterie et récipients anciens">الأوعية والفخار القديم</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Exhibits Section -->
+    <section id="exhibits" class="exhibits">
+        <div class="container">
+            <h2 data-ar="المعروضات الرئيسية - معلومات تفصيلية" data-en="Main Exhibits - Detailed Information" data-de="Hauptausstellungen - Detaillierte Informationen" data-fr="Expositions principales - Informations détaillées">المعروضات الرئيسية - معلومات تفصيلية</h2>
+            <div class="exhibits-detailed">
+                <!-- Exhibit 1 -->
+                <div class="exhibit-detailed-card">
+                    <div class="exhibit-detail-header">
+                        <h3 data-ar="🏺 الفخار والأوعية القديمة" data-en="🏺 Ancient Pottery and Vessels" data-de="🏺 Antike Keramik und Behälter" data-fr="🏺 Poterie et récipients anciens">🏺 الفخار والأوعية القديمة</h3>
+                        <span class="period" data-ar="العصور القديمة - الإسلامية" data-en="Ancient - Islamic Periods" data-de="Antike - islamische Periode" data-fr="Périodes anciennes - islamiques">العصور القديمة - الإسلامية</span>
+                    </div>
+                    <div class="exhibit-detail-content">
+                        <div class="exhibit-detail-image">
+                            <img src="https://images.unsplash.com/photo-1578321272176-305d5e0bfdb6?w=300&h=250&fit=crop" alt="الفخار">
+                        </div>
+                        <div class="exhibit-detail-text">
+                            <p><strong data-ar="الوصف:" data-en="Description:" data-de="Beschreibung:" data-fr="Description:">الوصف:</strong> <span data-ar="مجموعة نادرة من الأوعية والقصاع الفخارية التي تعود إلى عصور مختلفة." data-en="A rare collection of pottery vessels and bowls from different periods." data-de="Eine seltene Sammlung von Keramikgefäßen und Schüsseln aus verschiedenen Perioden." data-fr="Une rare collection de récipients et de bols en poterie de différentes périodes.">مجموعة نادرة من الأوعية والقصاع الفخارية التي تعود إلى عصور مختلفة.</span></p>
+                            <p><strong data-ar="الأهمية التاريخية:" data-en="Historical Importance:" data-de="Historische Bedeutung:" data-fr="Importance historique:">الأهمية التاريخية:</strong> <span data-ar="تعكس هذه الأوعية مهارة الحرفيين العمانيين في صناعة الفخار والزخرفة." data-en="These vessels reflect the skills of Omani craftsmen in pottery making and decoration." data-de="Diese Gefäße spiegeln die Fähigkeiten der omanischen Handwerker in der Keramikherstellung und Verzierung wider." data-fr="Ces récipients reflètent les compétences des artisans omaniens dans la fabrication et la décoration de poterie.">تعكس هذه الأوعية مهارة الحرفيين العمانيين في صناعة الفخار والزخرفة.</span></p>
+                            <p><strong data-ar="الاستخدام القديم:" data-en="Ancient Use:" data-de="Antike Verwendung:" data-fr="Usage antique:">الاستخدام القديم:</strong> <span data-ar="كانت تستخدم لتخزين العطور واللبان والزيوت." data-en="They were used to store perfumes, frankincense and oils." data-de="Sie wurden zum Lagern von Düften, Weihrauch und Ölen verwendet." data-fr="Ils ont été utilisés pour stocker les parfums, l'encens et les huiles.">كانت تستخدم لتخزين العطور واللبان والزيوت.</span></p>
+                            <ul class="exhibit-details">
+                                <li data-ar="التاريخ: من القرن 3 ق.م إلى القرن 15 م" data-en="Period: From 3rd century BCE to 15th century CE" data-de="Zeitraum: Von 3. Jahrhundert v. Chr. bis 15. Jahrhundert n. Chr." data-fr="Période: Du 3ème siècle avant J.-C. au 15ème siècle de notre ère">التاريخ: من القرن 3 ق.م إلى القرن 15 م</li>
+                                <li data-ar="المادة: طين أحمر وبني محلي" data-en="Material: Local red and brown clay" data-de="Material: Lokaler roter und brauner Ton" data-fr="Matériau: Argile rouge et brune locale">المادة: طين أحمر وبني محلي</li>
+                                <li data-ar="الزخرفة: نقوش هندسية وأشكال نباتية" data-en="Decoration: Geometric patterns and plant motifs" data-de="Dekoration: Geometrische Muster und Pflanzenmotive" data-fr="Décoration: Motifs géométriques et motifs végétaux">الزخرفة: نقوش هندسية وأشكال نباتية</li>
+                                <li data-ar="عدد ��لقطع: أكثر من 200 قطعة" data-en="Number of pieces: Over 200 pieces" data-de="Anzahl der Teile: Über 200 Teile" data-fr="Nombre de pièces: Plus de 200 pièces">عدد القطع: أكثر من 200 قطعة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibit 2 -->
+                <div class="exhibit-detailed-card">
+                    <div class="exhibit-detail-header">
+                        <h3 data-ar="💰 العملات والنقود القديمة" data-en="💰 Ancient Coins and Currency" data-de="💰 Antike Münzen und Währung" data-fr="💰 Monnaies et devises anciennes">💰 العملات والنقود القديمة</h3>
+                        <span class="period" data-ar="الفترة اليونانية والإسلامية" data-en="Greek and Islamic Period" data-de="Griechische und islamische Periode" data-fr="Période grecque et islamique">الفترة اليونانية والإسلامية</span>
+                    </div>
+                    <div class="exhibit-detail-content">
+                        <div class="exhibit-detail-image">
+                            <img src="https://images.unsplash.com/photo-1578661159438-26fc77f2dd7d?w=300&h=250&fit=crop" alt="العملات">
+                        </div>
+                        <div class="exhibit-detail-text">
+                            <p><strong data-ar="الوصف:" data-en="Description:" data-de="Beschreibung:" data-fr="Description:">الوصف:</strong> <span data-ar="عملات معدنية نادرة من فترات تاريخية مختلفة، دليل على الحركة التجارية النشطة." data-en="Rare metal coins from different historical periods, evidence of active trade movement." data-de="Seltene Münzen aus verschiedenen historischen Perioden, Beweis für aktive Handelsbewegungen." data-fr="Rares pièces de monnaie de différentes périodes historiques, preuve de mouvements commerciaux actifs.">عملات معدنية نادرة من فترات تاريخية مختلفة، دليل على الحركة التجارية النشطة.</span></p>
+                            <p><strong data-ar="الأهمية التاريخية:" data-en="Historical Importance:" data-de="Historische Bedeutung:" data-fr="Importance historique:">الأهمية التاريخية:</strong> <span data-ar="توضح هذه العملات الاتصالات التجارية بين عمان والدول المجاورة." data-en="These coins show trade connections between Oman and neighboring countries." data-de="Diese Münzen zeigen Handelsverbindungen zwischen Oman und Nachbarländern." data-fr="Ces pièces de monnaie montrent les connexions commerciales entre Oman et les pays voisins.">توضح هذه العملات الاتصالات التجارية بين عمان والدول المجاورة.</span></p>
+                            <ul class="exhibit-details">
+                                <li data-ar="من أصول: اليونان، فارس، مصر، الخلافة الإسلامية" data-en="Origins: Greece, Persia, Egypt, Islamic Caliphate" data-de="Herkunftsländer: Griechenland, Persien, Ägypten, Islamisches Kalifat" data-fr="Origines: Grèce, Perse, Égypte, Califat islamique">من أصول: اليونان، فارس، مصر، الخلافة الإسلامية</li>
+                                <li data-ar="المعادن: ذهب، فضة، برونز" data-en="Metals: Gold, silver, bronze" data-de="Metalle: Gold, Silber, Bronze" data-fr="Métaux: Or, argent, bronze">المعادن: ذهب، فضة، برونز</li>
+                                <li data-ar="النقوش: صور الملوك والعلامات التجارية" data-en="Inscriptions: Images of kings and trade marks" data-de="Inschriften: Bilder von Königen und Handelsmarken" data-fr="Inscriptions: Images de rois et marques commerciales">النقوش: صور الملوك والعلامات التجارية</li>
+                                <li data-ar="عدد القطع: أكثر من 150 عملة" data-en="Number of pieces: Over 150 coins" data-de="Anzahl der Münzen: Über 150 Münzen" data-fr="Nombre de pièces: Plus de 150 pièces">عدد القطع: أكثر من 150 عملة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibit 3 -->
+                <div class="exhibit-detailed-card">
+                    <div class="exhibit-detail-header">
+                        <h3 data-ar="📿 الحلي والمجوهرات" data-en="📿 Jewelry and Ornaments" data-de="📿 Schmuck und Ornamente" data-fr="📿 Bijoux et ornements">📿 الحلي والمجوهرات</h3>
+                        <span class="period" data-ar="العصور القديمة" data-en="Ancient Period" data-de="Antike Periode" data-fr="Période antique">العصور القديمة</span>
+                    </div>
+                    <div class="exhibit-detail-content">
+                        <div class="exhibit-detail-image">
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=300&h=250&fit=crop" alt="المجوهرات">
+                        </div>
+                        <div class="exhibit-detail-text">
+                            <p><strong data-ar="الوصف:" data-en="Description:" data-de="Beschreibung:" data-fr="Description:">الوصف:</strong> <span data-ar="مجموعة فريدة من الحلي والمجوهرات بأشكال وأنماط هندسية متنوعة." data-en="A unique collection of jewelry with various geometric shapes and patterns." data-de="Eine einzigartige Sammlung von Schmuck mit verschiedenen geometrischen Formen und Mustern." data-fr="Une collection unique de bijoux avec diverses formes et motifs géométriques.">مجموعة فريدة من الحلي والمجوهرات بأشكال وأنماط هندسية متنوعة.</span></p>
+                            <ul class="exhibit-details">
+                                <li data-ar="الأنواع: أساور، خواتم، أقراط، عقود" data-en="Types: Bracelets, rings, earrings, necklaces" data-de="Typen: Armbänder, Ringe, Ohrringe, Halsketten" data-fr="Types: Bracelets, bagues, boucles d'oreilles, colliers">الأنواع: أساور، خواتم، أقراط، عقود</li>
+                                <li data-ar="الحجارة: لؤلؤ، عقيق، كهرمان" data-en="Stones: Pearl, agate, amber" data-de="Steine: Perle, Achat, Bernstein" data-fr="Pierres: Perle, agate, ambre">الحجارة: لؤلؤ، عقيق، كهرمان</li>
+                                <li data-ar="عدد القطع: أكثر من 100 قطعة" data-en="Number of pieces: Over 100 pieces" data-de="Anzahl der Teile: Über 100 Teile" data-fr="Nombre de pièces: Plus de 100 pièces">عدد القطع: أكثر من 100 قطعة</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exhibit 4 -->
+                <div class="exhibit-detailed-card">
+                    <div class="exhibit-detail-header">
+                        <h3 data-ar="🌳 اللبان والبخور - الذهب الأبيض" data-en="🌳 Frankincense - White Gold" data-de="🌳 Weihrauch - Weißes Gold" data-fr="🌳 Encens - Or blanc">🌳 اللبان والبخور - الذهب الأبيض</h3>
+                        <span class="period" data-ar="عصور تجارية ذهبية" data-en="Golden Trade Era" data-de="Goldene Handelsära" data-fr="Ère dorée du commerce">عصور تجارية ذهبية</span>
+                    </div>
+                    <div class="exhibit-detail-content">
+                        <div class="exhibit-detail-image">
+                            <img src="https://images.unsplash.com/photo-1578761681033-6461ffad8d80?w=300&h=250&fit=crop" alt="اللبان">
+                        </div>
+                        <div class="exhibit-detail-text">
+                            <p><strong data-ar="الوصف:" data-en="Description:" data-de="Beschreibung:" data-fr="Description:">الوصف:</strong> <span data-ar="عينات من اللبان والبخور الطبيعي مع أدوات الحصاد والتخزين التقليدية." data-en="Samples of natural frankincense and incense with traditional harvesting and storage tools." data-de="Proben von natürlichem Weihrauch und Räucherstoff mit traditionellen Ernte- und Lagerwerkzeugen." data-fr="Échantillons d'encens naturel avec outils traditionnels de récolte et de stockage.">عينات من اللبان والبخور الطبيعي مع أدوات الحصاد والتخزين التقليدية.</span></p>
+                            <ul class="exhibit-details">
+                                <li data-ar="مصدر اللبان: شجر الكندر (البخور)" data-en="Source: Boswellia sacra tree" data-de="Quelle: Boswellia sacra Baum" data-fr="Source: Arbre Boswellia sacra">مصدر اللبان: شجر الكندر (البخور)</li>
+                                <li data-ar="أنواع: لبان حجازي، شحري، ظفاري" data-en="Types: Hijazi, Dhofari, Shihri frankincense" data-de="Typen: Hijazi, Dhofari, Shihri Weihrauch" data-fr="Types: Encens Hijazi, Dhofari, Shihri">أنواع: لبان حجازي، شحري، ظفاري</li>
+                                <li data-ar="الأسعار القديمة: تعادل ذهباً بنفس الوزن" data-en="Ancient prices: Equal to gold by weight" data-de="Alte Preise: Gleichwertung mit Gold nach Gewicht" data-fr="Prix antiques: Équivalent à l'or en poids">الأسعار القديمة: تعادل ذهباً بنفس الوزن</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Exhibits Section -->
-    <section id="exhibits" class="exhibits">
+    <!-- Map Section -->
+    <section id="map" class="map-section">
         <div class="container">
-            <h2>المعروضات الرئيسية</h2>
-            <div class="exhibits-grid">
-                <div class="exhibit-card">
-                    <div class="exhibit-icon">🏺</div>
-                    <h3>الفخار القديم</h3>
-                    <p>أواني فخارية نادرة من العصور القديمة، تعكس مهارة الحرفيين العمانيين.</p>
-                </div>
-
-                <div class="exhibit-card">
-                    <div class="exhibit-icon">💰</div>
-                    <h3>النقود القديمة</h3>
-                    <p>عملات نادرة تعود لفترات زمنية مختلفة، دليل على ازدهار التجارة القديمة.</p>
-                </div>
-
-                <div class="exhibit-card">
-                    <div class="exhibit-icon">📿</div>
-                    <h3>الحلي والمجوهرات</h3>
-                    <p>مجموعة نادرة من الحلي والمجوهرات التاريخية بأشكال وأنماط مختلفة.</p>
-                </div>
-
-                <div class="exhibit-card">
-                    <div class="exhibit-icon">🌳</div>
-                    <h3>أشجار اللبان</h3>
-                    <p>معروضات تعليمية عن شجر اللبان الشهير وأهميتها التاريخية والاقتصادية.</p>
-                </div>
-
-                <div class="exhibit-card">
-                    <div class="exhibit-icon">📜</div>
-                    <h3>الوثائق التاريخية</h3>
-                    <p>وثائق نادرة وكتابات تاريخية توثق حقبة ازدهار التجارة.</p>
-                </div>
-
-                <div class="exhibit-card">
-                    <div class="exhibit-icon">🗺️</div>
-                    <h3>الخرائط القديمة</h3>
-                    <p>خرائط توضح طرق التجارة القديمة وأهمية موقع عمان الجغرافي.</p>
+            <h2 data-ar="موقع المتحف على الخريطة" data-en="Museum Location on Map" data-de="Museumsstandort auf der Karte" data-fr="Emplacement du musée sur la carte">موقع المتحف على الخريطة</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.826159384741!2d54.35!3d16.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f7d1234567890ab%3A0xabcdef1234567890!2sAl%20Baleed%20(Frankincense%20Museum)!5e0!3m2!1sar!2som!4v1234567890123" 
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-info">
+                    <h3 data-ar="📍 معلومات الموقع" data-en="📍 Location Information" data-de="📍 Standortinformationen" data-fr="📍 Informations de localisation">📍 معلومات الموقع</h3>
+                    <p><strong data-ar="العنوان:" data-en="Address:" data-de="Adresse:" data-fr="Adresse:">العنوان:</strong> <span data-ar="البليد، ولاية ظفار، سلطنة عمان" data-en="Al Baleed, Dhofar Governorate, Sultanate of Oman" data-de="Al Baleed, Gouvernement Dhofar, Sultanat Oman" data-fr="Al Baleed, Gouvernorat de Dhofar, Sultanat d'Oman">البليد، ولاية ظفار، سلطنة عمان</span></p>
+                    <p><strong data-ar="الإحداثيات:" data-en="Coordinates:" data-de="Koordinaten:" data-fr="Coordonnées:">الإحداثيات:</strong> <span data-ar="16.8555° N, 54.3516° E" data-en="16.8555° N, 54.3516° E" data-de="16.8555° N, 54.3516° E" data-fr="16.8555° N, 54.3516° E">16.8555° N, 54.3516° E</span></p>
+                    <p><strong data-ar="المسافة من صلالة:" data-en="Distance from Salalah:" data-de="Entfernung von Salalah:" data-fr="Distance de Salalah:">المسافة من صلالة:</strong> <span data-ar="حوالي 50 كيلومتر" data-en="Approximately 50 kilometers" data-de="Ungefähr 50 Kilometer" data-fr="Environ 50 kilomètres">حوالي 50 كيلومتر</span></p>
+                    <p><strong data-ar="وقت الوصول:" data-en="Travel Time:" data-de="Fahrtzeit:" data-fr="Temps de trajet:">وقت الوصول:</strong> <span data-ar="حوالي 45 دقيقة بالسيارة" data-en="Approximately 45 minutes by car" data-de="Etwa 45 Minuten mit dem Auto" data-fr="Environ 45 minutes en voiture">حوالي 45 دقيقة بالسيارة</span></p>
                 </div>
             </div>
         </div>
@@ -118,57 +237,36 @@
     <!-- Visiting Info -->
     <section id="visiting" class="visiting">
         <div class="container">
-            <h2>معلومات الزيارة</h2>
+            <h2 data-ar="معلومات الزيارة" data-en="Visiting Information" data-de="Besucherinformationen" data-fr="Informations de visite">معلومات الزيارة</h2>
             <div class="visiting-grid">
                 <div class="visit-card">
-                    <h3>📍 الموقع</h3>
-                    <p>منطقة البليد التاريخية<br>ولاية ظفار، سلطنة عمان</p>
+                    <h3 data-ar="📍 الموقع" data-en="📍 Location" data-de="📍 Standort" data-fr="📍 Localisation">📍 الموقع</h3>
+                    <p data-ar="منطقة البليد التاريخية<br>ولاية ظفار، سلطنة عمان<br>50 كم من صلالة" data-en="Al Baleed Historic Area<br>Dhofar Governorate, Oman<br>50 km from Salalah" data-de="Historisches Gebiet Al Baleed<br>Gouvernement Dhofar, Oman<br>50 km von Salalah entfernt" data-fr="Zone historique d'Al Baleed<br>Gouvernorat de Dhofar, Oman<br>50 km de Salalah">منطقة البليد التاريخية<br>ولاية ظفار، سلطنة عمان<br>50 كم من صلالة</p>
                 </div>
 
                 <div class="visit-card">
-                    <h3>🕐 ساعات العمل</h3>
-                    <p>من الأحد إلى الخميس<br>8:00 صباحاً - 4:00 مساءً<br>الجمعة والسبت مغلق</p>
+                    <h3 data-ar="🕐 ساعات العمل" data-en="🕐 Opening Hours" data-de="🕐 Öffnungszeiten" data-fr="🕐 Heures d'ouverture">🕐 ساعات العمل</h3>
+                    <p data-ar="من الأحد إلى الخميس<br>8:00 صباحاً - 4:00 مساءً<br>الجمعة والسبت مغلق" data-en="Sunday to Thursday<br>8:00 AM - 4:00 PM<br>Friday and Saturday Closed" data-de="Sonntag bis Donnerstag<br>8:00 bis 16:00 Uhr<br>Freitag und Samstag geschlossen" data-fr="Dimanche à jeudi<br>8h00 - 16h00<br>Vendredi et samedi fermé">من الأحد إلى الخميس<br>8:00 صباحاً - 4:00 مساءً<br>الجمعة والسبت مغلق</p>
                 </div>
 
                 <div class="visit-card">
-                    <h3>🎟️ تذاكر الدخول</h3>
-                    <p>البالغون: 3 ريال<br>الأطفال: 1 ريال<br>رسوم الكاميرا: 2 ريال</p>
+                    <h3 data-ar="🎟️ تذاكر الدخول" data-en="🎟️ Admission Tickets" data-de="🎟️ Eintrittskarten" data-fr="🎟️ Billets d'entrée">🎟️ تذاكر الدخول</h3>
+                    <p data-ar="البالغون: 3 ريال<br>الأطفال (6-12): 1 ريال<br>رسوم الكاميرا: 2 ريال" data-en="Adults: 3 OMR<br>Children (6-12): 1 OMR<br>Camera Fee: 2 OMR" data-de="Erwachsene: 3 OMR<br>Kinder (6-12): 1 OMR<br>Kameragebühr: 2 OMR" data-fr="Adultes: 3 OMR<br>Enfants (6-12): 1 OMR<br>Frais de caméra: 2 OMR">البالغون: 3 ريال<br>الأطفال (6-12): 1 ريال<br>رسوم الكاميرا: 2 ريال</p>
                 </div>
 
                 <div class="visit-card">
-                    <h3>👥 الخدمات</h3>
-                    <p>✓ جولات إرشادية<br>✓ مقهى<br>✓ مكتبة<br>✓ محل هدايا</p>
+                    <h3 data-ar="👥 الخدمات" data-en="👥 Services" data-de="👥 Dienstleistungen" data-fr="👥 Services">👥 الخدمات</h3>
+                    <p data-ar="✓ جولات إرشادية<br>✓ مقهى<br>✓ مكتبة<br>✓ محل هدايا" data-en="✓ Guided tours<br>✓ Café<br>✓ Library<br>✓ Gift shop" data-de="✓ Führungen<br>✓ Café<br>✓ Bibliothek<br>✓ Geschenkladen" data-fr="✓ Visites guidées<br>✓ Café<br>✓ Bibliothèque<br>✓ Boutique de cadeaux">✓ جولات إرشادية<br>✓ مقهى<br>✓ مكتبة<br>✓ محل هدايا</p>
                 </div>
 
                 <div class="visit-card">
-                    <h3>♿ التسهيلات</h3>
-                    <p>✓ كراسي متحركة<br>✓ مواقف سيارات<br>✓ دورات مياه<br>✓ مساحات مظللة</p>
+                    <h3 data-ar="♿ التسهيلات" data-en="♿ Facilities" data-de="♿ Einrichtungen" data-fr="♿ Équipements">♿ التسهيلات</h3>
+                    <p data-ar="✓ كراسي متحركة<br>✓ مواقف سيارات<br>✓ دورات مياه<br>✓ مساحات مظللة" data-en="✓ Wheelchairs<br>✓ Parking<br>✓ Restrooms<br>✓ Shaded areas" data-de="✓ Rollstühle<br>✓ Parkplatz<br>✓ Toiletten<br>✓ Schattige Bereiche" data-fr="✓ Fauteuils roulants<br>✓ Parking<br>✓ Toilettes<br>✓ Zones ombragées">✓ كراسي متحركة<br>✓ مواقف سيارات<br>✓ دورات مياه<br>✓ مساحات مظللة</p>
                 </div>
 
                 <div class="visit-card">
-                    <h3>🚌 المواصلات</h3>
-                    <p>يمكن الوصول بسهولة<br>من مدينة صلالة<br>على بعد 50 كم تقريباً</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Preview -->
-    <section class="gallery">
-        <div class="container">
-            <h2>معرض الصور</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">📷 الواجهة الرئيسية</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">📷 القاعة الرئيسية</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">📷 المعروضات</div>
-                </div>
-                <div class="gallery-item">
-                    <div class="gallery-placeholder">📷 الفناء الخارجي</div>
+                    <h3 data-ar="🚌 المواصلات" data-en="🚌 Transportation" data-de="🚌 Verkehrsmittel" data-fr="🚌 Transport">🚌 المواصلات</h3>
+                    <p data-ar="يمكن الوصول بسهولة<br>من مدينة صلالة<br>توجد مواقف سيارات<br>خدمة سيارات أجرة" data-en="Easy access<br>from Salalah city<br>Parking available<br>Taxi service" data-de="Einfacher Zugang<br>von der Stadt Salalah<br>Parkplatz vorhanden<br>Taxiservice" data-fr="Accès facile<br>depuis la ville de Salalah<br>Parking disponible<br>Service de taxi">يمكن الوصول بسهولة<br>من مدينة صلالة<br>توجد مواقف سيارات<br>خدمة سيارات أجرة</p>
                 </div>
             </div>
         </div>
@@ -177,16 +275,16 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>تواصل معنا</h2>
+            <h2 data-ar="تواصل معنا" data-en="Contact Us" data-de="Kontaktieren Sie uns" data-fr="Nous contacter">تواصل معنا</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>📞 معلومات التواصل</h3>
-                    <p><strong>الهاتف:</strong> +968 2341234</p>
-                    <p><strong>البريد الإلكتروني:</strong> info@frankincensemuseum.om</p>
-                    <p><strong>الفاكس:</strong> +968 2341235</p>
-                    <p><strong>الموقع:</strong> البليد، ظفار، عمان</p>
+                    <h3 data-ar="📞 معلومات التواصل" data-en="📞 Contact Information" data-de="📞 Kontaktinformationen" data-fr="📞 Informations de contact">📞 معلومات التواصل</h3>
+                    <p><strong data-ar="الهاتف:" data-en="Phone:" data-de="Telefon:" data-fr="Téléphone:">الهاتف:</strong> +968 2341234</p>
+                    <p><strong data-ar="البريد الإلكتروني:" data-en="Email:" data-de="E-Mail:" data-fr="E-mail:">البريد الإلكتروني:</strong> info@frankincensemuseum.om</p>
+                    <p><strong data-ar="الفاكس:" data-en="Fax:" data-de="Fax:" data-fr="Fax:">الفاكس:</strong> +968 2341235</p>
+                    <p><strong data-ar="الموقع:" data-en="Location:" data-de="Standort:" data-fr="Localisation:">الموقع:</strong> <span data-ar="البليد، ظفار، عمان" data-en="Al Baleed, Dhofar, Oman" data-de="Al Baleed, Dhofar, Oman" data-fr="Al Baleed, Dhofar, Oman">البليد، ظفار، عمان</span></p>
                     
-                    <h3 style="margin-top: 30px;">🌐 تابعنا على</h3>
+                    <h3 style="margin-top: 30px;" data-ar="🌐 تابعنا على" data-en="🌐 Follow Us" data-de="🌐 Folgen Sie uns" data-fr="🌐 Suivez-nous">🌐 تابعنا على</h3>
                     <div class="social-links">
                         <a href="#" class="social-btn">Facebook</a>
                         <a href="#" class="social-btn">Instagram</a>
@@ -195,14 +293,14 @@
                 </div>
 
                 <form class="contact-form" onsubmit="submitForm(event)">
-                    <h3>أرسل لنا رسالة</h3>
+                    <h3 data-ar="أرسل لنا رسالة" data-en="Send us a message" data-de="Senden Sie uns eine Nachricht" data-fr="Envoyez-nous un message">أرسل لنا رسالة</h3>
                     
-                    <input type="text" placeholder="اسمك" required>
-                    <input type="email" placeholder="بريدك الإلكتروني" required>
-                    <input type="text" placeholder="الموضوع" required>
-                    <textarea placeholder="رسالتك" rows="5" required></textarea>
+                    <input type="text" placeholder="اسمك" data-placeholder-ar="اسمك" data-placeholder-en="Your name" data-placeholder-de="Ihr Name" data-placeholder-fr="Votre nom" required>
+                    <input type="email" placeholder="بريدك الإلكتروني" data-placeholder-ar="بريدك الإلكتروني" data-placeholder-en="Your email" data-placeholder-de="Ihre E-Mail" data-placeholder-fr="Votre e-mail" required>
+                    <input type="text" placeholder="الموضوع" data-placeholder-ar="الموضوع" data-placeholder-en="Subject" data-placeholder-de="Betreff" data-placeholder-fr="Sujet" required>
+                    <textarea placeholder="رسالتك" data-placeholder-ar="رسالتك" data-placeholder-en="Your message" data-placeholder-de="Ihre Nachricht" data-placeholder-fr="Votre message" rows="5" required></textarea>
                     
-                    <button type="submit" class="submit-btn">إرسال</button>
+                    <button type="submit" class="submit-btn" data-ar="إرسال" data-en="Send" data-de="Senden" data-fr="Envoyer">إرسال</button>
                 </form>
             </div>
         </div>
@@ -211,9 +309,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 متحف أرض اللبان - جميع الحقوق محفوظة</p>
-            <p>سلطنة عمان 🇴🇲</p>
-            <p style="font-size: 12px; margin-top: 10px;">تم تطوير هذا الموقع بواسطة طلاب عمانيين</p>
+            <p>&copy; 2026 <span data-ar="متحف أرض اللبان - جميع الحقوق محفوظة" data-en="Al Baleed Museum - All Rights Reserved" data-de="Al Baleed Museum - Alle Rechte vorbehalten" data-fr="Musée Al Baleed - Tous droits réservés">متحف أرض اللبان - جميع الحقوق محفوظة</span></p>
+            <p data-ar="سلطنة عمان 🇴🇲" data-en="Sultanate of Oman 🇴🇲" data-de="Sultanat Oman 🇴🇲" data-fr="Sultanat d'Oman 🇴🇲">سلطنة عمان 🇴🇲</p>
+            <p style="font-size: 12px; margin-top: 10px;" data-ar="تم تطوير هذا الموقع بواسطة طلاب عمانيين" data-en="Developed by Omani students" data-de="Entwickelt von omanischen Studenten" data-fr="Développé par des étudiants omaniens">تم تطوير هذا الموقع بواسطة طلاب عمانيين</p>
         </div>
     </footer>
 
